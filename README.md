@@ -29,8 +29,8 @@ Task 3: User Interface (UI)
 - Implement functionality so that clicking "Start Game" loads the scene created in Task 2.
 - Create an in-game UI that displays the player's score.
 - Write a C# script that increments the score by one every second while the game is running.
-= Implement a game over screen that shows the player's final score when the sphere falls off the ground.
-= Provide transitions between the main menu, in-game, and game over screens with smooth fade-ins and fade-outs.
+- Implement a game over screen that shows the player's final score when the sphere falls off the ground.
+- Provide transitions between the main menu, in-game, and game over screens with smooth fade-ins and fade-outs.
 
 Task 4: Optimization and Performance
 
