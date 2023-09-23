@@ -1,0 +1,16 @@
+Optimization and Performance
+
+Basic Scripting
+- I separated UI statics and frequently updates elements, to lessen the drawback of "canvas dirtying" which affects the whole canvas if a single element gets updated
+- adjusted the lighting, removed shadows, considering it's not part of the task
+- I changed the way the UI is updated, instead of polling, I made events for whenever the rotation speed is updated and subscribed the script that updates the text in there, lessens the calls
+
+Physics and Collision
+- I made the ground static
+- I didn't adjust anything in particular in the code, considering I have to poll the velocity with how I wanted to set it up to update the UI text
+- I did however turned of specific objects when the game over screen is on, which lightens the batching
+
+Overall optimization
+- I used the UniTask package, to replace the use of coroutine, I think async workflow works best when handling scene management and "overtime" behaviors. It's much cleaner to use too
+- I also used the Scriptable Object workflow, I use this on personal projects. depending on design, if I only need specific instance references I can use it as a container so I can create code that is Data Oriented and more generic
+- I also adjusted the code to be as decoupled as possible, using the unity events system to be designer friendly. In personal project I would use a preset SO event system called Unity Atoms to decouple code
